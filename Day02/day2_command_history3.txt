@@ -1,0 +1,113 @@
+  335  exit
+  336  kssh 
+  337  clear
+  338  ls
+  339  cd 20190409
+  340  ls
+  341  vim The_Holy_Bible.txt 
+  342  more The_Holy_Bible.txt 
+  343  less The_Holy_Bible.txt 
+  344  which ls
+  345  file /bin/ls
+  346  man ls
+  347  ls
+  348  ll
+  349  vim file5
+  350  cat file
+  351  cat file5
+  352  sort file5
+  353  vim file6
+  354  cat file6
+  355  ll file6
+  356  vim file6
+  357  echo "乐乐" >file7
+  358  cat file7 
+  359  echo -n "乐乐" >file7
+  360  cat file7 
+  361  sort file6
+  362  vim file6 
+  363  cat file6
+  364  sort file6 >file7
+  365  cat file7
+  366  sort file6 >file6
+  367  cat file6
+  368  vim file6
+  369  cat file7
+  370  vim file7 
+  371  ll
+  372  which ls
+  373  ll /bin/ls
+  374  file /bin/ls
+  375  file The_Holy_Bible.txt 
+  376  file log3
+  377  file main.c
+  378  ls
+  379  ll
+  380  cat file5
+  381  echo hanmeimei >>file5
+  382  cat file5
+  383  uniq file5
+  384  sort file5 
+  385  sort file5 |uniq
+  386  sort file5 |uniq -c
+  387  sort file5 |uniq -d
+  388  sort file5 |uniq -u
+  389  wc The_Holy_Bible.txt 
+  390  wc -c The_Holy_Bible.txt 
+  391  wc -l The_Holy_Bible.txt 
+  392  ls
+  393  ls|wc -l
+  394  ls >file
+  395  cat file
+  396  ll
+  397  ll|wc -l
+  398  find . -type f
+  399  find . -type f|wc -l
+  400  find . -type f >file
+  401  vim file
+  402  wc The_Holy_Bible.txt 
+  403  wc -m The_Holy_Bible.txt 
+  404  wc -w The_Holy_Bible.txt 
+  405  ls hanzi.txt 
+  406  ll hanzi.txt 
+  407  echo -n 烫 >hanzi_linux.txt
+  408  ll hanzi*
+  409  cat hanzi.txt 
+  410  vim hanzi.txt 
+  411  vim hanzi_linux.txt 
+  412  vim hanzi.txt 
+  413  vim ~/.vimrc 
+  414  iconv -f utf-8 -t gb2312 hanzi_linux.txt 
+  415  iconv -f utf-8 -t gb2312 hanzi_linux.txt >hanzi_windows
+  416  cat hanzi_windows 
+  417  cat hanzi_linux.txt 
+  418  vim ~/.vimrc 
+  419  iconv -f gb2312 -t utf-8 hanzi.txt 
+  420  iconv -f gb2312 -t utf-8 hanzi.txt >hanzi_linux2
+  421  vim hanzi_linux2
+  422  vim hanzi_windows 
+  423  cat hanzi_windows
+  424  ls
+  425  find /usr/include/ -name stdio.h
+  426  grep FILE /usr/include/stdio.h
+  427  ls
+  428  grep printf main.c 
+  429  grep -n printf main.c 
+  430  ls
+  431  head -100 The_Holy_Bible.txt >test
+  432  grep God test
+  433  grep -n God test
+  434  ls
+  435  cat main.c 
+  436  vim main.c 
+  437  grep int main.c 
+  438  grep ^int main.c 
+  439  cat main.c 
+  440  echo 123;echo 456
+  441  grep ;$ main.c 
+  442  grep \;$ main.c 
+  443  history 
+  444  ls
+  445  cd ..
+  446  kscp 20190409
+  447  history |tail -113 >day2_command_history3.txt

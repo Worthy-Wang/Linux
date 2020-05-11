@@ -1,0 +1,130 @@
+  445  cd ..
+  446  kscp 20190409
+  447  history |tail -113 >day2_command_history3.txt
+  448  kscp day2_command_history3.txt 
+  449  cd -
+  450  ls
+  451  vim main.c 
+  452  grep ^ main.c
+  453  grep -F ^ main.c
+  454  grep -c FILE main.c 
+  455  grep -c int main.c 
+  456  vim test
+  457  grep god test
+  458  vim test
+  459  grep GOD test
+  460  grep -i GOD test
+  461  cat main.c 
+  462  grep pri main.c 
+  463  grep pri* main.c 
+  464  grep pri.* main.c 
+  465  grep pri.*f main.c 
+  466  vim main.c 
+  467  grep pri.*f main.c 
+  468  grep pri main.c 
+  469  grep pri. main.c 
+  470  grep pri...f main.c 
+  471  grep pri..f main.c 
+  472  cat main.c 
+  473  grep fp main.c 
+  474  grep f[o-p] main.c 
+  475  find /usr/include/ -name *.h
+  476  find /usr/include/ -name stdio.h
+  477  find /usr/include/ -name stdio.h|xargs grep printf
+  478  ll
+  479  umask 
+  480  ls
+  481  umask 000
+  482  ll
+  483  touch file9
+  484  ll
+  485  mkdir dir2
+  486  ll
+  487  umask 006
+  488  ls
+  489  cd ..
+  490  du -h 20190409
+  491  du -h --max-depth=0 20190409
+  492  tar cvzf 20190409.tar.gz 20190409
+  493  ll 20190409.tar.gz 
+  494  ls -lh 20190409.tar.gz 
+  495  vim .bashrc 
+  496  ll 20190409.tar.gz 
+  497  . .bashrc
+  498  ll 20190409.tar.gz 
+  499  cd 20190409/
+  500  ls
+  501  history 
+  502  ls
+  503  ll
+  504  ls dir1
+  505  tar cfv dir1.tar dir1
+  506  ll
+  507  file dir1.tar 
+  508  file log2
+  509  file dir1
+  510  du -h dir1
+  511  tar cvf file.tar file*
+  512  tar cf file.tar file*
+  513  rm file.tar 
+  514  tar cf file.tar file*
+  515  ll
+  516  tar rf file.tar main.c 
+  517  ll
+  518  rm file[1-9] file main.c 
+  519  ll
+  520  tar xf file.tar 
+  521  ll
+  522  tar cvzf file.tar.gz file[1-9] main.c file
+  523  ls
+  524  ll
+  525  rm file.tar
+  526  tar xf file.tar.gz 
+  527  ll
+  528  gzip dir1
+  529  bzip2 dir1
+  530  gzip -v The_Holy_Bible.txt 
+  531  ll
+  532  gzip -d The_Holy_Bible.txt.gz 
+  533  ll
+  534  bzip2 -v The_Holy_Bible.txt 
+  535  ll
+  536  bzip2 -dv The_Holy_Bible.txt.bz2 
+  537  ll
+  538  scp The_Holy_Bible.txt test@192.168.2.100:~
+  539  ssh test@192.168.2.100
+  540  ls
+  541  rm The_Holy_Bible.txt 
+  542  scp test@192.168.2.100:~/The_Holy_Bible.txt .
+  543  ll
+  544  route
+  545  route -n
+  546  route
+  547  route -n
+  548  route del -net 0.0.0.0 gw 192.168.3.1
+  549  sudo route del -net 0.0.0.0 gw 192.168.3.1
+  550  ll
+  551  route
+  552  route -n
+  553  ping www.baidu.com
+  554  history 
+  555  sudo add del -net 0.0.0.0 default gw 192.168.3.1
+  556  sudo route add -net 0.0.0.0 default gw 192.168.3.1
+  557  sudo route add -net 0.0.0.0 gw 192.168.3.1 netmask 255.255.255.0
+  558  route
+  559  route -n
+  560  ping www.baidu.com
+  561  ping 14.215.177.39
+  562  route
+  563  history 
+  564  sudo add del -net 0.0.0.0 default gw 192.168.3.1
+  565  sudo route del -net 0.0.0.0 gw 192.168.3.1
+  566  route
+  567  sudo route del -net 0.0.0.0 gw 192.168.3.1 netmask 255.255.255.0
+  568  sudo route add -net 0.0.0.0 gw 192.168.3.1 netmask 0.0.0.0
+  569  route
+  570  route -n
+  571  ping www.baidu.com
+  572  history 
+  573  history |grep history
+  574  history |tail -130 >day2_command_history4.txt

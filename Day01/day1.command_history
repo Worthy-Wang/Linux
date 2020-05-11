@@ -1,0 +1,282 @@
+  328  ifconfig
+  329  whoami 
+  330  ifconfig
+  331  ping www.baidu.com
+  332  ps -elf|grep ssh
+  333  clear
+  334  sudo passwd root
+  335  su
+  336  cat /etc/passwd
+  337  ls
+  338  cd ..
+  339  cd -
+  340  pwd
+  341  cd ..
+  342  ls
+  343  useradd xiongda
+  344  su
+  345  sudo userdel xionger
+  346  cat /etc/passwd
+  347  ls
+  348  su
+  349  su xiongda
+  350  sudo userdel xiongda
+  351  cat /etc/passwd
+  352  ls
+  353  ls /
+  354  mount
+  355  ls luke
+  356  ls
+  357  ls ../
+  358  ls /home/luke/Desktop
+  359  cd luke
+  360  ls
+  361  ls -a
+  362  ls -l
+  363  cd Desktop
+  364  ls
+  365  touch file
+  366  ls
+  367  ls -l
+  368  cat /etc/group
+  369  ls -l
+  370  cat /etc/passwd
+  371  cd /home
+  372  ls
+  373  useradd xiongda -s /bin/bash
+  374  sudo useradd xiongda -s /bin/bash
+  375  passwd xiongda
+  376  sudo passwd xiongda
+  377  cd luke/
+  378  ls
+  379  cd Desktop/
+  380  ls
+  381  cd ..
+  382  ls -l
+  383  pwd
+  384  cd ..
+  385  pwd
+  386  cd /
+  387  ls
+  388  cd ~
+  389  pwd
+  390  cd ..
+  391  ls
+  392  touch file
+  393  ls .. -l
+  394  ls
+  395  mkdir test
+  396  cd luke
+  397  pwd
+  398  mkdir 20190408
+  399  cd 20190408/
+  400  ls
+  401  mkdir ../test
+  402  mkdir /home/xiongda/
+  403  mkdir /home/xiongda/test
+  404  ls
+  405  mkdir test
+  406  ls
+  407  cat ../.bashrc 
+  408  ls ~/.bashrc 
+  409  ls
+  410  rmdir test
+  411  mkdir test
+  412  ls
+  413  cd ..
+  414  rmdir 20190408
+  415  ls
+  416  cp gmtime.c 20190408/
+  417  ls 20190408
+  418  cp 20190408/gmtime.c 20190408/test1.c
+  419  ls 20190408
+  420  cd 20190408
+  421  ls
+  422  cp test1.c test
+  423  ls
+  424  ls test
+  425  cp test dir1
+  426  cp -r test dir1
+  427  ls
+  428  ls dir1/
+  429  cp test1.c test
+  430  cp -i test1.c test
+  431  ls
+  432  cat test1.c 
+  433  echo haha
+  434  echo haha >test/test1.c 
+  435  cat test/test1.c 
+  436  cp -i test1.c test
+  437  cat test/test1.c 
+  438  cp -f test1.c test
+  439  ls
+  440  ls test
+  441  mv gmtime.c test
+  442  ls
+  443  ls test
+  444  ls
+  445  mv test1.c test2.c
+  446  ls
+  447  mv test2.c test/test3.c
+  448  ls test/
+  449  ls
+  450  mv test dir2
+  451  ls
+  452  ls dir2
+  453  cat dir2/test1.c 
+  454  touch test1.c
+  455  ls
+  456  ls -l
+  457  vim ~/.bashrc 
+  458  ll
+  459  mv -i test1.c dir2
+  460  cat dir2/test1.c 
+  461  history 
+  462  mv -i test1.c dir2
+  463  cat dir2/test1.c 
+  464  rm /home/xiongda
+  465  rm -r /home/xiongda
+  466  rm -rf /home/xiongda
+  467  ls
+  468  cd ..
+  469  tar cvzf 20190408.tar.gz 20190408
+  470  cd -
+  471  ls
+  472  cd dir2/
+  473  ls
+  474  rm test3.c 
+  475  cd ..
+  476  ls
+  477  touch dir2/test2.c
+  478  ls dir2/
+  479  cd dir2/
+  480  ls
+  481  touch file
+  482  ls
+  483  ls *.c
+  484  rm *.c
+  485  ls
+  486  touch gmtime.c  test1.c  test2.c
+  487  ls
+  488  ll
+  489  touch file1
+  490  ls
+  491  rm .c
+  492  rm ! *.c
+  493  ls
+  494  touch gmtime.c  test1.c  test2.c
+  495  ls
+  496  rm ! "*.c"
+  497  ls
+  498  touch file2 file3 file4
+  499  ls
+  500  ls *
+  501  ll
+  502  rm file[1-2]
+  503  ls
+  504  ll
+  505  ls file[3-4]
+  506  cp *.c ../
+  507  cd ..
+  508  ll
+  509  tree
+  510  sudo apt  install tree
+  511  tree
+  512  cd ..
+  513  tree
+  514  tree -h
+  515  ls
+  516  ls -l
+  517  tree -a
+  518  echo $PATH
+  519  dhfad
+  520  lswea
+  521  ls
+  522  cd 20190408/
+  523  ll
+  524  echo dashen >gmtime.c 
+  525  ll
+  526  pwd
+  527  chmod o+w gmtime.c 
+  528  ll
+  529  chmod u-w gmtime.c 
+  530  ll
+  531  chmod g-w gmtime.c 
+  532  ll
+  533  echo haha >gmtime.c 
+  534  ll
+  535  chmod +w gmtime.c 
+  536  ll
+  537  echo haha >gmtime.c 
+  538  ll
+  539  chmod 777 gmtime.c 
+  540  ll
+  541  chmod 111 gmtime.c 
+  542  ll
+  543  chmod 444 gmtime.c 
+  544  ll
+  545  chmod 664 gmtime.c 
+  546  ll
+  547  vim echo.sh
+  548  ls
+  549  ll
+  550  chmod 775 echo.sh 
+  551  ll
+  552  ./echo.sh 
+  553  cat echo.sh 
+  554  ls
+  555  ll
+  556  ls dir2
+  557  rm dir2/file
+  558  chmod 555 dir2
+  559  ll
+  560  rm dir2/file3
+  561  chmod 777 dir2/
+  562  ls
+  563  ll
+  564  cd dir2
+  565  ls
+  566  ll
+  567  pwd
+  568  cd ..
+  569  ll
+  570  ls
+  571  cd ..
+  572  ls
+  573  cd 20190408/
+  574  ls
+  575  ll
+  576  chmod 222 dir2
+  577  ll
+  578  cd dir2
+  579  chmod 775 dir2
+  580  ll
+  581  cd ~
+  582  ls
+  583  ll 20190408
+  584  ll
+  585  du -h 20190408
+  586  du -h --max-depth=0 20190408
+  587  du -h --max-depth=0 .
+  588  pwd
+  589  cd 20190408
+  590  ls
+  591  echo 123 >file
+  592  ll
+  593  cat file
+  594  history 
+  595  history |grep rm
+  596  ls
+  597  cd ..
+  598  tar cvzf 20190408.tar.gz 20190408
+  599  cd -
+  600  ls
+  601  rm !(*.c)
+  602  ls
+  603  cd ..
+  604  ls
+  605  rm -rf 20190408
+  606  tar -xf 20190408.tar.gz 
+  607  ls
+  608  history 
+  609  history |tail -282 >day1.command_history

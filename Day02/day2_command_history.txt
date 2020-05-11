@@ -1,0 +1,230 @@
+  331  ping www.baidu.com
+  332  ps -elf|grep ssh
+  333  exit
+  334  sudo userdel xiongda
+  335  exit
+  336  useradd -m guangtouqiang
+  337  sudo useradd -m guangtouqiang
+  338  sudo passwd guangtouqiang
+  339  cat /etc/passwd
+  340  sudo vim /etc/passwd
+  341  su
+  342  sudo cat /etc/shadow
+  343  sudo passwd root
+  344  ls
+  345  mkdir 20190409
+  346  cd 20190409/
+  347  ls
+  348  ls -a
+  349  cd .
+  350  cd ..
+  351  ls
+  352  cd 20190408/
+  353  ls
+  354  rm !(*.c)
+  355  ls
+  356  rm -r !(*.c)
+  357  ls
+  358  touch func.h
+  359  ls
+  360  touch file file1
+  361  ls
+  362  rm -r !(*.[c-h])
+  363  ls
+  364  cp ../20190409 . -r
+  365  ls
+  366  mv test2.c 20190409/test3.c
+  367  ls
+  368  ls 20190409/
+  369  mount
+  370  cd ../20190409
+  371  ls
+  372  find /usr/include/ -name stdio.h
+  373  ls
+  374  touch file
+  375  ls
+  376  mkdir dir1
+  377  mkdir dir1/file
+  378  ls
+  379  pwd 
+  380  find /home/luke/20190409
+  381  find /home/luke/20190409 -name file
+  382  find . -name file
+  383  find . -name file -a -type d
+  384  ll dir1/
+  385  find . -name file -a -type f
+  386  ls
+  387  find /usr/include/ -name stdio.h -o -name stdlib.h
+  388  ls
+  389  find . ! -name file
+  390  find . ! -type f
+  391  find /usr/include/ -name std*.h
+  392  ls
+  393  touch file1 file2 file3 file4
+  394  ls
+  395  find . -name file[1-2]
+  396  find . -name "file[1-2]"
+  397  cat /etc/paswd
+  398  cat /etc/passwd
+  399  ls
+  400  find . -uid 0
+  401  ll
+  402  rm -f file5
+  403  ll
+  404  echo 123 >file4
+  405  ll
+  406  echo 123 >file5
+  407  find . -user root
+  408  ls
+  409* 
+  410  ll
+  411  find . -empty -exec ls -l {} \;
+  412  find . -empty
+  413  ls dir1/
+  414  ls -l dir1
+  415  ls -l /dir1/file
+  416  ls -l ./dir1/file
+  417  find . -empty|xargs ls -l
+  418  touch dir1/file/file1
+  419  find . -empty|xargs ls -l
+  420  echo 123 > ./dir1/file/file1
+  421  find . -empty|xargs ls -l
+  422  find . -name file|xargs ls -l
+  423  ls -l ./dir1/file
+  424  ls -l
+  425  touch dir1/file3
+  426  find . -name file|xargs ls -l
+  427  touch dir1/file/file3
+  428  find . -name file|xargs ls -l
+  429  find . -name file
+  430  find . -name file|ls -l
+  431  ll
+  432  find . -mmin 2
+  433  find . -mmin -2
+  434  find . -mmin +2
+  435  find . -mmin 2
+  436  find . -mmin -2
+  437  find . -mmin +2
+  438  find . -mmin -60
+  439  which kmkdir
+  440  cat /usr/bin/kmkdir
+  441  sudo vim /usr/bin/kmkdir
+  442  kmkdir 
+  443  sudo vim /usr/bin/kscp 
+  444  history 
+  445  history |tail -107 >day2_command_history.txt
+  446  kscp day2_command_history.txt 
+  447  cd ..
+  448  find . -mtime -2
+  449  find . -mtime -1
+  450  find . -mtime 1
+  451  find . -mtime -1
+  452  cd -
+  453  ls
+  454  find . -user root
+  455  find . -user root|xargs rm -rf
+  456  find . -user root
+  457  find . -perm 666
+  458  find . -perm 664
+  459  find . -perm 664|xargs ls -l
+  460  find . -perm 775|xargs ls -l
+  461  find . -perm 775
+  462  ls
+  463  ll
+  464  echo 123 >file
+  465  ll
+  466  find . -size 1
+  467  find . -size 5
+  468  man find
+  469  find . -size 4c
+  470  find . -size 4c|xargs ls -l
+  471  find . -size 2323c
+  472  ls -lh
+  473  cd ~
+  474  ls -lh
+  475  ls -l
+  476  cd -
+  477  df -h
+  478  ls -l /dev
+  479  cat /etc/issue
+  480  ll
+  481  cat file
+  482  vim file
+  483  cat -b file
+  484  vim file
+  485  cat -E file
+  486  cat -n file
+  487  cat -s file
+  488  history 
+  489  ls
+  490  vim main.c
+  491  gcc main.c 
+  492  ./a.out 
+  493  ./a.out >log1
+  494  cat log1 
+  495  ./a.out 2>log2
+  496  cat log2
+  497  vim main.c 
+  498  gcc main.c 
+  499  ./a.out noexit
+  500  ./a.out noexit >log3 2>&1
+  501  cat log3
+  502  ./a.out noexit >log4 1>&2
+  503  cat log4
+  504  cat log3
+  505  ./a.out noexit
+  506  ll
+  507  cat file1
+  508  echo xiongda >>file1
+  509  cat file1
+  510  echo xiaoniudui
+  511  echo -n xiaoniudui
+  512  echo -n xiaoniudui >file2
+  513  cat file2
+  514  echo guangtouqiang >>file1
+  515  cat file1
+  516  cat file2
+  517  cat file3
+  518  cat >file3<file1
+  519  cat file3
+  520  cat file1 
+  521  cat file1 >file8
+  522  cat file8
+  523  echo 
+  524  echo >file
+  525  rm file
+  526  echo >file
+  527  ll
+  528  vim file
+  529  echo -n >file
+  530  ll
+  531  touch file5
+  532  ll
+  533  cat >file6
+  534  ll
+  535  vim
+  536  head -n 3 main.c 
+  537  head -3 main.c 
+  538  kssh 
+  539  ssh root@192.168.2.100
+  540  ls
+  541  cd ..
+  542  ll
+  543  date
+  544  mv The_Holy_Bible.txt 20190409
+  545  cd 20190409
+  546  ls
+  547  head -10 The_Holy_Bible.txt 
+  548  head -10 The_Holy_Bible.txt >test1.txt
+  549  ll
+  550  cat test1.txt 
+  551  tail -10 The_Holy_Bible.txt 
+  552  history 
+  553  history |tail -10
+  554  history |tail -13
+  555  history |tail -15
+  556  history |tail -15 >day2_dashen.txt
+  557  cat day2_dashen.txt 
+  558  clear
+  559  history 
+  560  history |tail -230 >day2_command_history.txt

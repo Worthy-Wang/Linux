@@ -1,0 +1,15 @@
+  542  ll
+  543  date
+  544  mv The_Holy_Bible.txt 20190409
+  545  cd 20190409
+  546  ls
+  547  head -10 The_Holy_Bible.txt 
+  548  head -10 The_Holy_Bible.txt >test1.txt
+  549  ll
+  550  cat test1.txt 
+  551  tail -10 The_Holy_Bible.txt 
+  552  history 
+  553  history |tail -10
+  554  history |tail -13
+  555  history |tail -15
+  556  history |tail -15 >day2_dashen.txt

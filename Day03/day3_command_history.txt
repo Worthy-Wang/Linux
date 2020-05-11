@@ -1,0 +1,133 @@
+  732  ls
+  733  vim test.i 
+  734  ls
+  735  vim test.c
+  736  gcc -E test.c -o test.i
+  737  vim test.i 
+  738  gcc -S test.i -o test.s
+  739  vim test.c
+  740  gcc -E test.c -o test.i
+  741  gcc -S test.i -o test.s
+  742  vim test.s 
+  743  gcc
+  744  cd ~
+  745  tar cvzf 20190410.tar.gz 20190410
+  746  kscp 20190410.tar.gz 
+  747  cd -
+  748  env
+  749  env|grep PWD
+  750  cd -
+  751  env|grep PWD
+  752  ls
+  753  vim test.s
+  754  gcc -E test.c -o test.i
+  755  gcc -S test.i -o test.s
+  756  vim test.s 
+  757  gcc -E test.c -o test.i
+  758  gcc -S test.i -o test.s
+  759  vim test.s 
+  760  as test.s -o test.o
+  761  ls
+  762  ll
+  763  vim test.o
+  764  nm test.o 
+  765  gcc test.o -o test
+  766  ll
+  767  ./test 
+  768  gcc -o test test.o
+  769  ./test 
+  770  cd ..
+  771  ls
+  772  cd compile/
+  773  ls
+  774  rm test.o
+  775  gcc -c test.c
+  776  ls
+  777  cd ..
+  778  ls
+  779  mkdir debug
+  780  ls
+  781  mkdir sed
+  782  mv gscp.sh main.c vimrc sed
+  783  ls
+  784  cd debug/
+  785  vim main.c
+  786  gcc main.c 
+  787  ./a.out 
+  788  vim main.c 
+  789  gcc main.c 
+  790  ./a.out 
+  791  gcc -E main.c -o main.i
+  792  vim main.i 
+  793  gcc -E main.c -o main.i -D DEBUG
+  794  vim main.i 
+  795  ls
+  796  gcc main.c -o main -D DEBUG
+  797  ./main 
+  798  ./a.out 
+  799  which ls
+  800  ldd /bin/ls
+  801  cd /
+  802  ls
+  803  cd /usr/lib
+  804  ls
+  805  find . -name lib*.a.*
+  806  cd /lib
+  807  find . -name lib*.a.*
+  808  find . -name "lib*.a"
+  809  find . -name "lib*.a*"
+  810  ls
+  811  cd /lib64
+  812  find . -name "lib*.a*"
+  813  find . -name "lib*.a"
+  814  find . -name "lib*.so"
+  815  find . -name "lib*.so*"
+  816  ls
+  817  cd /lib
+  818  find . -name "lib*.so*"
+  819  cd ~/20190410
+  820  ls
+  821  mkdir lib
+  822  cd lib
+  823  ls
+  824  vim add.c
+  825  gcc -fPIC -Wall -c add.c
+  826  ls
+  827  gcc -shared add.o -o libadd.so
+  828  ll
+  829  ./libadd.so 
+  830  mkdir main
+  831  ls
+  832  cd main/
+  833  ls
+  834  vim main.c
+  835  gcc -c main.c 
+  836  ls
+  837  gcc main.c 
+  838  cd ..
+  839  ls
+  840  sudo cp libadd.so /usr/lib
+  841  ls
+  842  cd main/
+  843  ls
+  844  gcc main.c -ladd
+  845  gcc main.c -la
+  846  which /usr/bin/ld
+  847  file /usr/bin/ld
+  848  ldd /usr/bin/ld
+  849  ls
+  850  gcc main.c -ladd
+  851  ls
+  852  ./a.out 
+  853  which ls
+  854  ldd /bin/ls
+  855  ldd a.out 
+  856  ls
+  857  sudo rm /usr/lib/libadd.so
+  858  ./a.out 
+  859  ldd a.out 
+  860  cd ~
+  861  tar cvzf 20190410.tar.gz 20190410
+  862  kscp 20190410.tar.gz 
+  863  history 
+  864  history |tail -133 >day3_command_history.txt
