@@ -1,9 +1,10 @@
 #include <iostream>
-#define  NUM 1 + 2
 using namespace std;
+
+int add(int,int);
 
 int main()
 {
-	cout << NUM * NUM << endl;
+	cout << add(3, 4) << endl;
 	return 0;
 }
