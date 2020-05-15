@@ -1,0 +1,7 @@
+OBJS:=main.o print.o
+ELF:=main
+$(ELF):$(OBJS)
+	gcc $^ -o $@
+.PHONY:clean
+clean:
+	rm -rf $(ELF) $(OBJS)

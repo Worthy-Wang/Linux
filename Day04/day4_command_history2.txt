@@ -1,0 +1,200 @@
+  620  kscp day4.tar.gz 
+  621  cd /usr/include/
+  622  find . -name stat.h
+  623  cd -
+  624  ls
+  625  cd day4
+  626  ls
+  627  cp /usr/include/func.h .
+  628  cat func.h 
+  629  cd ..
+  630  tar cvzf day4.tar.gz day4
+  631  kscp day4.tar.gz 
+  632  kssh 
+  633  clear
+  634  sudo vim /usr/include/func.h 
+  635  cd day4/
+  636  ls
+  637  mkdir getcwd
+  638  cd getcwd/
+  639  env
+  640  vim getcwd.c
+  641  gcc getcwd.c 
+  642  ./a.out 
+  643  vim getcwd.c 
+  644  gcc getcwd.c 
+  645  ./a.out 
+  646  cp getcwd.c chdir.c
+  647  vim chdir.c 
+  648  gcc chdir.c 
+  649  ./a.out /tmp
+  650  kssh 
+  651  vim kModify
+  652  chmod +x kModify 
+  653  ./kModify 
+  654  sudo mv kModify /usr/bin
+  655  kModify 
+  656  mkdir dir1
+  657  ll
+  658  vim mkdir.c
+  659  kModify 
+  660  vim mkdir.c
+  661  gcc mkdir.c 
+  662  umask 
+  663  ./a.out dir2
+  664  ll
+  665  cp mkdir.c rmdir.c
+  666  vim rmdir.c 
+  667  gcc rmdir.c 
+  668  ./a.out dir2
+  669  ll
+  670  pwd
+  671  ./a.out /home/luke/day4/getcwd/dir1
+  672  ll
+  673  cd ..
+  674  ls
+  675  mkdir opendir
+  676  cd opendir/
+  677  kModify 
+  678  vim opendir.c
+  679  gcc opendir.c 
+  680  vim opendir.c 
+  681  ./a.out .
+  682  ls -l
+  683  ls -al
+  684  ls
+  685  cd ~/day4
+  686  tree
+  687  cd -
+  688  ls
+  689  cd ..
+  690  ls
+  691  man scandir
+  692  cp opendir finddir -r
+  693  cd finddir/
+  694  ls
+  695  mv opendir.c finddir.c
+  696  vim finddir.c 
+  697  gcc finddir.c 
+  698  ./a.out .
+  699  ls
+  700  pwd
+  701  ./a.out /home/luke/day4
+  702  ls /home/luke/day4
+  703  ls
+  704  vim finddir.c 
+  705  cd /home//luke
+  706  pwd
+  707  cd -
+  708  ls
+  709  ./a.out /home/luke/day4
+  710  gcc finddir.c 
+  711  ./a.out /home/luke/day4
+  712  ls
+  713  vim finddir.c 
+  714  vim printf.c
+  715  gcc printf.c 
+  716  ./a.out 
+  717  vim printf.c 
+  718  gcc printf.c 
+  719  ./a.out 
+  720  vim finddir.c 
+  721  gcc finddir.c 
+  722  ./a.out /home/luke/day4
+  723  tree /home/luke/day4
+  724  ls
+  725  vim finddir.c 
+  726  gcc finddir.c 
+  727  ./a.out /home/luke/day4
+  728  cd ~
+  729  tar cvzf day4.tar.gz day4
+  730  cd day4
+  731  ls
+  732  cp /usr/include/func.h .
+  733  cd ~
+  734  tar cvzf day4.tar.gz day4
+  735  kscp day4.tar.gz 
+  736  cd day4
+  737  ls
+  738  cp opendir seekdir -r
+  739  cd seekdir/
+  740  ls
+  741  mv opendir.c seekdir.c
+  742  vim seekdir.c 
+  743  gcc seekdir.c 
+  744  ./a.out .
+  745  gcc -E seekdir.c -o seekdir.i
+  746  vim seekdir.i 
+  747  vim seekdir.c 
+  748  gcc seekdir.c 
+  749  ./a.out .
+  750  cp seekdir.c rewinddir.c
+  751  vim rewinddir.c 
+  752  gcc rewinddir.c 
+  753  ./a.out 
+  754  ./a.out .
+  755  ls -l
+  756  cd ..
+  757  ls
+  758  mkdir stat
+  759  cd stat/
+  760  kModify 
+  761  vim stat.c
+  762  kModify 
+  763  gcc stat.c 
+  764  ./a.out a.out 
+  765  ll
+  766  ls -il
+  767  vim stat.c 
+  768  gcc stat.c 
+  769  ./a.out  a.out 
+  770  ll
+  771  ln stat.c stat1.c
+  772  ls -il
+  773  mv stat1.c ../
+  774  cd ..
+  775  ls
+  776  ls -il
+  777  ls stat
+  778  ls stat -l
+  779  vim stat1.c 
+  780  ls -il
+  781  cd stat/
+  782  ls -il
+  783  rm ../stat1.c 
+  784  ls -il
+  785  vim stat.c 
+  786  ls -il
+  787  man unlink
+  788  man 2 unlink
+  789  cp stat.c stat1.c
+  790  ls -il
+  791  vim stat1.c
+  792  ls -il
+  793  rm stat1.c 
+  794  ./a.out haha
+  795  ls
+  796  vim stat.c 
+  797  man getpwuid
+  798  kM
+  799  kModify 
+  800  vim stat.c 
+  801  gcc stat.c 
+  802  ./a.out  a.out 
+  803  ls -il
+  804  vim stat.c 
+  805  ls -il
+  806  ln stat.c stat1.c
+  807  ls
+  808  ls -il
+  809  vim stat.c 
+  810  ls -il
+  811  ls -ail
+  812  ls -il ../
+  813  ls
+  814  cd ~
+  815  tar cvzf day4.tar.gz day4
+  816  kscp day4.tar.gz 
+  817  ls
+  818  history 
+  819  history |tail -200 >day4_command_history2.txt

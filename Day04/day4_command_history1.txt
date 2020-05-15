@@ -1,0 +1,170 @@
+  365  vim main.c
+  366  gcc -S main.i -o main.s
+  367  gcc -E main.c -o main.i
+  368  gcc -S main.i -o main.s
+  369  vim main.s
+  370  ll
+  371  gcc -g -S main.i -o main.s
+  372  ll
+  373  vim main.s 
+  374  gcc -S main.i -o main.s
+  375  vim main.s
+  376  gcc -g -S main.i -o main.s
+  377  vim main.s 
+  378  ls
+  379  gcc main.c
+  380  ls
+  381  gdb a.out 
+  382  gcc -g main.c
+  383  gdb a.out 
+  384  vim main.c
+  385  gcc -g main.c
+  386  gdb a.out
+  387  vim main.c
+  388  gcc -g main.c
+  389  gdb a.out
+  390  cd ~
+  391  tar cvzf 20190411.tar.gz 20190411
+  392  kmkdir 
+  393  kscp 20190411.tar.gz 
+  394  cd /usr/bin
+  395  ls
+  396  ls -l ld
+  397  ls -l x86_64-linux-gnu-ld
+  398  ls -l x86_64-linux-gnu-ld.bfd\
+  399  ls -l x86_64-linux-gnu-ld.bfd
+  400  cd ~
+  401  ls
+  402  cd 20190411/
+  403  ls
+  404  cd ..
+  405  ls
+  406  mv 20190411 day4
+  407  cd day4
+  408  ls
+  409  cd gdb/
+  410  ls
+  411  gdb a.out 
+  412  ls
+  413  cd ..
+  414  ls
+  415  vim main.c
+  416  gcc main.c 
+  417  ./a.out 
+  418  vim main.c 
+  419  mkdir SegmentationFault
+  420  mv main.c a.out SegmentationFault/
+  421  ls
+  422  cd SegmentationFault/
+  423  ls
+  424  gcc -g main.c 
+  425  ulimit -a
+  426  ulimit -c unlimited
+  427  ls
+  428  ./a.out 
+  429  ll
+  430  gdb a.out core
+  431  cd ~
+  432  ls
+  433  cd day4/
+  434  ls
+  435  mkdir makefile
+  436  cd makefile/
+  437  vim main.c
+  438  vim print.c
+  439  gcc main.c 
+  440  gcc print.c main.c -o main
+  441  ls
+  442  ./main 
+  443  ls
+  444  ll
+  445  vim Makefile
+  446  make
+  447  ./main 
+  448  ll
+  449  vim main.c 
+  450  ll
+  451  cat Makefile 
+  452  make
+  453  ./main 
+  454  make
+  455  ls
+  456  ll
+  457  cat Makefile 
+  458  mv main main.exe
+  459  ./main.exe 
+  460  ll
+  461  mv main.exe main
+  462  ll
+  463  vim Makefile 
+  464  make clean
+  465  ls
+  466  make
+  467  make clean;make
+  468  ls
+  469  cp Makefile Makefile_verson1.1
+  470  ls
+  471  vim Makefile
+  472  make clean
+  473  make
+  474  ls
+  475  ./main 
+  476  vim Makefile
+  477  ls
+  478  make clean
+  479  ls
+  480  make
+  481  ./main 
+  482  vim Makefile
+  483  cp Makefile Makefile_version1.2
+  484  vim Makefile
+  485  make
+  486  make clean;make
+  487  vim Makefile
+  488  make clean;make
+  489  vim Makefile
+  490  make clean;make
+  491  ./main 
+  492  vim Makefile
+  493  make clean;make
+  494  ls
+  495  cp Makefile Makefile_version1.3
+  496  vim Makefile
+  497  ls
+  498  make clean
+  499  make
+  500  vim add.c
+  501  ls
+  502  vim sub.c
+  503  vim main.c 
+  504  make
+  505  ./main 
+  506  ls
+  507  cd ..
+  508  ls
+  509  mkdir makefile_more
+  510  cd makefile_more/
+  511  ls
+  512  cp ../makefile/main.c open1.c
+  513  ls
+  514  mv open1.c main1.c
+  515  vim main1.c 
+  516  cp main1.c main2.c
+  517  vim main2.c 
+  518  vim Makefile
+  519  make
+  520  ls
+  521  vim Makefile 
+  522  make
+  523  ls
+  524  vim Makefile 
+  525  make clean;make
+  526  ls
+  527  ./main1
+  528  ./main2
+  529  ls
+  530  cd ~
+  531  tar cvzf day4.tar.gz day4
+  532  kscp day4.tar.gz 
+  533  history 
+  534  history |tail -170 >day4_command_history1.txt
