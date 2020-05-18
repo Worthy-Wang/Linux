@@ -1,0 +1,25 @@
+mmapW) creates a new mapping in the virtual address space of the calling process.  The starting address for the new mapping is speci-
+       fied in addr.  The length argument specifies the length of the mapping (which must be greater than 0).
+
+       If addr is NULL, then the kernel chooses the address at which to create the mapping; this is the most portable method of  creating  a
+       new mapping.  If addr is not NULL, then the kernel takes it as a hint about where to place the mapping; on Linux, the mapping will be
+       created at a nearby page boundary.  The address of the new mapping is returned as the result of the call.
+
+       The contents of a file mapping (as opposed to an anonymous mapping; see MAP_ANONYMOUS below),  are  initialized  using  length  bytes
+       starting at offset offset in the file (or other object) referred to by the file descriptor fd.  offset must be a multiple of the page
+       size as returned by sysconf(_SC_PAGE_SIZE).
+
+       The prot argument describes the desired memory protection of the mapping (and must not conflict with the open mode of the file).   It
+       is either PROT_NONE or the bitwise OR of one or more of the following flags:
+
+       PROT_EXEC  Pages may be executed.
+
+       PROT_READ  Pages may be read.
+
+       PROT_WRITE Pages may be written.
+
+       PROT_NONE  Pages may not be accessed.
+
+       The  flags  argument  determines  whether  updates to the mapping are visible to other processes mapping the same region, and whether
+       updates are carried through to the underlying file.  This behavior is determined by including exactly one of the following values  in
+       flags:

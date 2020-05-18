@@ -40,7 +40,7 @@ void test1()
 {
     time_t rawtime;
     time(&rawtime);
-
+    cout << rawtime << endl;
     struct tm *timeinfo;
     timeinfo = localtime(&rawtime);
     cout << asctime(timeinfo) << endl;
@@ -50,5 +50,6 @@ void test1()
 
 int main()
 {
+    test1();
     return 0;
 }

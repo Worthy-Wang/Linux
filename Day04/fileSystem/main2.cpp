@@ -118,6 +118,6 @@ void test6()
 
 int main(int argc, char *argv[])
 {
-    test6();
+    test1();
     return 0;
 }
