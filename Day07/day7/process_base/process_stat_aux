@@ -1,0 +1,290 @@
+USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root          1  0.0  0.4 225744  6776 ?        Ss   Apr11   0:17 /lib/systemd/systemd --system --deserialize 35
+root          2  0.0  0.0      0     0 ?        S    Apr11   0:00 [kthreadd]
+root          4  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kworker/0:0H]
+root          6  0.0  0.0      0     0 ?        I<   Apr11   0:00 [mm_percpu_wq]
+root          7  0.0  0.0      0     0 ?        S    Apr11   0:12 [ksoftirqd/0]
+root          8  0.0  0.0      0     0 ?        I    Apr11   0:21 [rcu_sched]
+root          9  0.0  0.0      0     0 ?        I    Apr11   0:00 [rcu_bh]
+root         10  0.0  0.0      0     0 ?        S    Apr11   0:00 [migration/0]
+root         11  0.0  0.0      0     0 ?        S    Apr11   0:02 [watchdog/0]
+root         12  0.0  0.0      0     0 ?        S    Apr11   0:00 [cpuhp/0]
+root         13  0.0  0.0      0     0 ?        S    Apr11   0:00 [kdevtmpfs]
+root         14  0.0  0.0      0     0 ?        I<   Apr11   0:00 [netns]
+root         15  0.0  0.0      0     0 ?        S    Apr11   0:00 [rcu_tasks_kthre]
+root         16  0.0  0.0      0     0 ?        S    Apr11   0:00 [kauditd]
+root         17  0.0  0.0      0     0 ?        S    Apr11   0:00 [khungtaskd]
+root         18  0.0  0.0      0     0 ?        S    Apr11   0:00 [oom_reaper]
+root         19  0.0  0.0      0     0 ?        I<   Apr11   0:00 [writeback]
+root         20  0.0  0.0      0     0 ?        S    Apr11   0:00 [kcompactd0]
+root         21  0.0  0.0      0     0 ?        SN   Apr11   0:00 [ksmd]
+root         22  0.0  0.0      0     0 ?        SN   Apr11   0:01 [khugepaged]
+root         23  0.0  0.0      0     0 ?        I<   Apr11   0:00 [crypto]
+root         24  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kintegrityd]
+root         25  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kblockd]
+root         26  0.0  0.0      0     0 ?        I<   Apr11   0:00 [ata_sff]
+root         27  0.0  0.0      0     0 ?        I<   Apr11   0:00 [md]
+root         28  0.0  0.0      0     0 ?        I<   Apr11   0:00 [edac-poller]
+root         29  0.0  0.0      0     0 ?        I<   Apr11   0:00 [devfreq_wq]
+root         30  0.0  0.0      0     0 ?        I<   Apr11   0:00 [watchdogd]
+root         34  0.0  0.0      0     0 ?        S    Apr11   0:14 [kswapd0]
+root         35  0.0  0.0      0     0 ?        S    Apr11   0:00 [ecryptfs-kthrea]
+root         77  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kthrotld]
+root         78  0.0  0.0      0     0 ?        I<   Apr11   0:00 [acpi_thermal_pm]
+root         79  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_0]
+root         80  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_0]
+root         81  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_1]
+root         82  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_1]
+root         88  0.0  0.0      0     0 ?        I<   Apr11   0:00 [ipv6_addrconf]
+root         97  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kstrp]
+root        114  0.0  0.0      0     0 ?        I<   Apr11   0:00 [charger_manager]
+root        138  0.0  0.0      0     0 ?        I    Apr11   0:00 [kworker/0:2]
+root        174  0.0  0.0      0     0 ?        I<   Apr11   0:00 [mpt_poll_0]
+root        175  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_2]
+root        176  0.0  0.0      0     0 ?        I<   Apr11   0:00 [mpt/0]
+root        177  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_2]
+root        178  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_3]
+root        179  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_3]
+root        180  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_4]
+root        181  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_4]
+root        182  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_5]
+root        183  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_5]
+root        184  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_6]
+root        185  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_6]
+root        186  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_7]
+root        187  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_7]
+root        188  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_8]
+root        189  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_8]
+root        190  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_9]
+root        191  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_9]
+root        192  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_10]
+root        193  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_10]
+root        194  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_11]
+root        195  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_11]
+root        196  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_12]
+root        197  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_12]
+root        198  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_13]
+root        199  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_13]
+root        200  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_14]
+root        201  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_14]
+root        202  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_15]
+root        203  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_15]
+root        204  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_16]
+root        205  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_16]
+root        206  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_17]
+root        207  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_17]
+root        208  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_18]
+root        209  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_18]
+root        210  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_19]
+root        211  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_19]
+root        212  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_20]
+root        213  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_20]
+root        214  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_21]
+root        215  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_21]
+root        216  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_22]
+root        217  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_22]
+root        218  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_23]
+root        219  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_23]
+root        220  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_24]
+root        221  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_24]
+root        222  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_25]
+root        223  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_25]
+root        224  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_26]
+root        225  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_26]
+root        226  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_27]
+root        227  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_27]
+root        228  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_28]
+root        229  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_28]
+root        230  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_29]
+root        231  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_29]
+root        232  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_30]
+root        233  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_30]
+root        234  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_31]
+root        235  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_31]
+root        263  0.0  0.0      0     0 ?        S    Apr11   0:00 [scsi_eh_32]
+root        264  0.0  0.0      0     0 ?        I<   Apr11   0:00 [scsi_tmf_32]
+root        265  0.0  0.0      0     0 ?        I<   Apr11   0:00 [ttm_swap]
+root        266  0.0  0.0      0     0 ?        S    Apr11   0:01 [irq/16-vmwgfx]
+root        268  0.0  0.0      0     0 ?        I<   Apr11   0:15 [kworker/0:1H]
+root        290  0.0  0.0      0     0 ?        S    Apr11   0:06 [jbd2/sda1-8]
+root        291  0.0  0.0      0     0 ?        I<   Apr11   0:00 [ext4-rsv-conver]
+root        347  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop0]
+root        351  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop1]
+root        356  0.0  0.0 158788    84 ?        Ssl  Apr11   0:00 vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid
+root        357  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop3]
+root        359  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop4]
+root        370  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop5]
+root        374  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop7]
+root        378  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop8]
+root        379  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop9]
+root        384  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop11]
+root        386  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop12]
+root        389  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop13]
+root        394  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop15]
+root        399  0.1  0.1 206288  2728 ?        Ssl  Apr11  10:33 /usr/bin/vmtoolsd
+root        401  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop16]
+root        402  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop17]
+root        404  0.0  0.0      0     0 ?        S<   Apr11   0:01 [loop18]
+root        405  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop19]
+root        406  0.0  0.0      0     0 ?        S<   Apr11   0:00 [loop20]
+root        551  0.0  0.0   4552    32 ?        Ss   Apr11   0:00 /usr/sbin/acpid
+message+    552  0.0  0.2  51916  4316 ?        Ss   Apr11   0:09 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root        553  0.0  0.0 177612    44 ?        Ssl  Apr11   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        556  0.0  0.0  87740     4 ?        Ss   Apr11   0:00 /usr/bin/VGAuthService
+root        557  0.0  0.0 427256  1444 ?        Ssl  Apr11   0:00 /usr/sbin/ModemManager
+root        558  0.0  0.2 503428  4456 ?        Ssl  Apr11   0:00 /usr/lib/udisks2/udisksd
+root        560  0.0  0.4 494176  6348 ?        Ssl  Apr11   0:27 /usr/sbin/NetworkManager --no-daemon
+avahi       561  0.0  0.0  47332  1500 ?        Ss   Apr11   0:39 avahi-daemon: running [ubuntu-29.local]
+avahi       566  0.0  0.0  47076    40 ?        S    Apr11   0:00 avahi-daemon: chroot helper
+syslog      568  0.0  0.0 263036   428 ?        Ssl  Apr11   0:00 /usr/sbin/rsyslogd -n
+root        571  0.0  0.0 297280  1440 ?        Ssl  Apr11   0:09 /usr/lib/accountsservice/accounts-daemon
+root        576  0.0  0.0  38428  1284 ?        Ss   Apr11   0:01 /usr/sbin/cron -f
+root        590  0.0  0.1  70700  2848 ?        Ss   Apr11   0:01 /lib/systemd/systemd-logind
+root        592  0.0  0.8 693976 13208 ?        Ssl  Apr11   1:17 /usr/lib/snapd/snapd
+root        708  0.0  0.3  72296  4684 ?        Ss   Apr11   0:00 /usr/sbin/sshd -D
+root        710  0.0  0.0 308184   616 ?        Ssl  Apr11   0:00 /usr/sbin/gdm3
+root        726  0.0  0.0 261552   688 ?        Sl   Apr11   0:00 gdm-session-worker [pam/gdm-launch-environment]
+root        757  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kworker/u257:0]
+root        759  0.0  0.0      0     0 ?        I<   Apr11   0:00 [kworker/u257:2]
+mysql       760  0.6  0.0 1345384  588 ?        Ssl  Apr11  43:02 /usr/sbin/mysqld
+gdm         781  0.0  0.2  77028  3040 ?        Ss   Apr11   0:00 /lib/systemd/systemd --user
+gdm         783  0.0  0.0 113864     4 ?        S    Apr11   0:00 (sd-pam)
+gdm         802  0.0  0.0 197796    44 tty1     Ssl+ Apr11   0:00 /usr/lib/gdm3/gdm-wayland-session gnome-session --autostart /usr/share/gdm/greeter/autostart
+gdm         804  0.0  0.1  50328  1804 ?        Ss   Apr11   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gdm         810  0.0  0.1 558956  1532 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-session/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+whoopsie    818  0.0  0.0 538032   868 ?        Ssl  Apr11   0:00 /usr/bin/whoopsie -f
+kernoops    823  0.0  0.0  56936   108 ?        Ss   Apr11   0:14 /usr/sbin/kerneloops --test
+kernoops    831  0.0  0.0  56936   644 ?        Ss   Apr11   0:14 /usr/sbin/kerneloops
+gdm         877  0.0  2.3 2895564 35752 tty1    Sl+  Apr11   2:50 /usr/bin/gnome-shell
+root        941  0.0  0.1 322336  2052 ?        Ssl  Apr11   0:00 /usr/lib/upower/upowerd
+root       1033  0.0  0.0  36476     0 ?        Ss   Apr11   0:00 /usr/lib/bluetooth/bluetoothd
+gdm        1060  0.0  0.0 258288   272 tty1     S+   Apr11   0:01 /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6
+gdm        1081  0.0  0.0 349400    44 ?        Ssl  Apr11   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+gdm        1086  0.0  0.0  49928     0 ?        S    Apr11   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+gdm        1088  0.0  0.0 220760     0 ?        Sl   Apr11   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+gdm        1091  0.0  0.1 1153304 1944 ?        Ssl  Apr11   0:00 /usr/bin/pulseaudio --daemonize=no
+rtkit      1094  0.0  0.0 183504     0 ?        SNsl Apr11   0:05 /usr/lib/rtkit/rtkit-daemon
+gdm        1128  0.0  0.0 435096    44 tty1     Sl   Apr11   0:00 ibus-daemon --xim --panel disable
+gdm        1131  0.0  0.0 280740     0 tty1     Sl   Apr11   0:00 /usr/lib/ibus/ibus-dconf
+gdm        1133  0.0  0.0 488056    44 tty1     Sl   Apr11   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+gdm        1138  0.0  0.0 278688    32 ?        Sl   Apr11   0:00 /usr/lib/ibus/ibus-portal
+root       1150  0.0  0.0 296776   424 ?        Ssl  Apr11   0:00 /usr/lib/x86_64-linux-gnu/boltd
+root       1154  0.0  4.2 448432 64324 ?        Ssl  Apr11   0:31 /usr/lib/packagekit/packagekitd
+gdm        1155  0.0  0.0 638560    44 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+gdm        1161  0.0  0.0 278148     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+gdm        1162  0.0  0.0 487672    44 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+gdm        1167  0.0  0.2 803332  4112 tty1     Sl+  Apr11   3:34 /usr/lib/gnome-settings-daemon/gsd-color
+gdm        1168  0.0  0.0 393704    44 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+gdm        1169  0.0  0.0 283740     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+gdm        1170  0.0  0.0 642064    20 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+gdm        1171  0.0  0.0 937020   684 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+gdm        1174  0.0  0.0 201996     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+gdm        1176  0.0  0.0 661356  1244 tty1     Sl+  Apr11   0:01 /usr/lib/gnome-settings-daemon/gsd-power
+gdm        1178  0.0  0.0 267004     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+gdm        1180  0.0  0.0 202016     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+gdm        1181  0.0  0.0 275732     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+gdm        1182  0.0  0.0 305100     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+gdm        1185  0.0  0.0 377928     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+gdm        1189  0.0  0.0 332860     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+gdm        1193  0.0  0.0 572648     0 tty1     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+gdm        1209  0.0  0.0 204888     0 tty1     Sl   Apr11   0:00 /usr/lib/ibus/ibus-engine-simple
+colord     1244  0.0  0.1 324972  2600 ?        Ssl  Apr11   0:00 /usr/lib/colord/colord
+root       1268  0.0  0.0 415468  1332 ?        Sl   Apr11   0:00 gdm-session-worker [pam/gdm-password]
+luke       1271  0.0  0.1  77104  2172 ?        Ss   Apr11   0:00 /lib/systemd/systemd --user
+luke       1272  0.0  0.0 195792    40 ?        S    Apr11   0:00 (sd-pam)
+luke       1285  0.0  0.1 288376  1760 ?        Sl   Apr11   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+luke       1289  0.0  0.0 212128    80 tty2     Ssl+ Apr11   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+luke       1291  0.0  1.3 462744 20988 tty2     Sl+  Apr11   0:29 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+luke       1298  0.0  0.2  51816  3904 ?        Ss   Apr11   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+luke       1302  0.0  0.0 632956  1304 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+luke       1395  0.0  0.0  11304    40 ?        Ss   Apr11   0:02 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+luke       1397  0.0  0.0 349288     0 ?        Ssl  Apr11   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+luke       1402  0.0  0.0  49924   312 ?        S    Apr11   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+luke       1405  0.0  0.0 220772   164 ?        Sl   Apr11   0:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+luke       1422  0.0  7.0 2985092 106332 tty2   Sl+  Apr11   5:58 /usr/bin/gnome-shell
+luke       1428  0.0  0.1 644364  2928 ?        Ssl  Apr11   0:00 /usr/lib/gvfs/gvfsd
+luke       1433  0.0  0.0 416112     0 ?        Sl   Apr11   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+luke       1444  0.0  0.1 1172068 2344 ?        S<l  Apr11   0:00 /usr/bin/pulseaudio --start --log-target=syslog
+root       1455  0.0  0.0      0     0 ?        S<   Apr11   0:00 [krfcommd]
+luke       1456  0.0  0.3 362676  5528 tty2     Sl   Apr11   0:03 ibus-daemon --xim --panel disable
+luke       1460  0.0  0.0 280744   180 tty2     Sl   Apr11   0:00 /usr/lib/ibus/ibus-dconf
+luke       1462  0.0  0.1 343932  1700 tty2     Sl   Apr11   0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+luke       1464  0.0  0.0 278688   352 ?        Sl   Apr11   0:00 /usr/lib/ibus/ibus-portal
+luke       1475  0.0  0.0 690012  1008 ?        Sl   Apr11   0:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+luke       1479  0.0  0.2 978920  3056 ?        Ssl  Apr11   0:00 /usr/lib/evolution/evolution-source-registry
+luke       1488  0.0  0.0 774280   556 ?        Sl   Apr11   0:00 /usr/lib/gnome-online-accounts/goa-daemon
+luke       1500  0.0  0.0 306440  1408 ?        Ssl  Apr11   0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+luke       1504  0.0  0.0 377088   164 ?        Sl   Apr11   0:02 /usr/lib/gnome-online-accounts/goa-identity-service
+luke       1511  0.0  0.0 275868   316 ?        Ssl  Apr11   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+luke       1515  0.0  0.0 288784   960 ?        Ssl  Apr11   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+luke       1519  0.0  0.0 274044   272 ?        Ssl  Apr11   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+luke       1523  0.0  0.0 378812   232 ?        Ssl  Apr11   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+luke       1529  0.0  0.2 517136  3060 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-power
+luke       1532  0.0  0.0 349320   472 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+luke       1533  0.0  0.0 423344   452 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+luke       1534  0.0  0.0 275732   108 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+luke       1536  0.0  0.1 452828  2680 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-sharing
+luke       1537  0.0  0.0 332852   192 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+luke       1539  0.0  0.1 494452  1784 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+luke       1545  0.0  0.3 428384  5472 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+luke       1548  0.0  0.0 377928   176 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+luke       1557  0.0  0.1 343548  2032 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+luke       1558  0.0  0.0 278148   356 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+luke       1561  0.0  0.0 469728    80 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+luke       1564  0.0  0.4 658676  6800 tty2     Sl+  Apr11   3:20 /usr/lib/gnome-settings-daemon/gsd-color
+luke       1567  0.0  0.0 497904  1080 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+luke       1571  0.0  0.0 364444  1028 tty2     Sl+  Apr11   0:28 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+luke       1573  0.0  0.0 278156   240 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+luke       1576  0.0  0.2 792628  3096 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+luke       1598  0.0  0.0 508756   172 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-settings-daemon/gsd-printer
+luke       1624  0.0  0.1 271932  2008 tty2     Sl+  Apr11   0:00 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
+luke       1627  0.0  2.8 1020384 43176 tty2    Sl+  Apr11   0:04 nautilus-desktop
+luke       1632  0.0  7.5 1135632 113044 tty2   SLl+ Apr11   0:32 /usr/bin/gnome-software --gapplication-service
+luke       1639  0.1  0.1 523372  1968 tty2     Sl+  Apr11  11:09 /usr/bin/vmtoolsd -n vmusr --blockFd 3
+luke       1649  0.0  0.0 368236   728 ?        Sl   Apr11   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.13 /org/gtk/gvfs/exec_spaw/0
+luke       1669  0.0  0.0 892144     0 ?        Ssl  Apr11   0:00 /usr/lib/evolution/evolution-calendar-factory
+luke       1681  0.0  0.0 187904   496 ?        Sl   Apr11   0:00 /usr/lib/dconf/dconf-service
+luke       1688  0.0  0.0 939260   692 ?        Sl   Apr11   0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1669x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1669/2
+luke       1690  0.0  0.0 204884    84 tty2     Sl   Apr11   0:00 /usr/lib/ibus/ibus-engine-simple
+luke       1701  0.0  0.0 732796     0 ?        Ssl  Apr11   0:00 /usr/lib/evolution/evolution-addressbook-factory
+luke       1712  0.0  0.0 886104   720 ?        Sl   Apr11   0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1701x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/1701/2
+root       1744  0.0  0.4 560368  6596 ?        Ssl  Apr11   0:19 /usr/lib/fwupd/fwupd
+luke       1800  0.0  0.5 595036  8760 tty2     Sl+  Apr11   0:11 update-notifier
+luke       1823  0.0  0.0 861492   728 tty2     Sl+  Apr11   0:00 /usr/lib/deja-dup/deja-dup-monitor
+luke       1980  0.0  0.0 591704   508 ?        Sl   Apr11   0:00 /usr/lib/gvfs/gvfsd-network --spawner :1.13 /org/gtk/gvfs/exec_spaw/6
+luke       2101  0.0  0.0 381420   644 ?        Sl   Apr11   0:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.13 /org/gtk/gvfs/exec_spaw/25
+luke       2458  0.0  0.0 204504   656 ?        Ssl  Apr11   0:00 /usr/lib/gvfs/gvfsd-metadata
+gdm        3237  0.0  0.0 187800    44 ?        Sl   Apr11   0:00 /usr/lib/dconf/dconf-service
+root       4073  0.0  0.0 265416   520 ?        Sl   Apr11   0:00 gdm-session-worker [pam/gdm-password]
+root       6155  0.0  0.1 265416  1660 ?        Sl   Apr11   0:00 gdm-session-worker [pam/gdm-password]
+root      32226  0.0  0.0      0     0 ?        I    Apr12   4:02 [kworker/0:1]
+root      34556  0.0  0.0  44752   468 ?        Ss   Apr12   0:01 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root      35167  0.0  0.2  46144  3640 ?        Ss   Apr12   0:00 /lib/systemd/systemd-udevd
+systemd+  43770  0.0  0.1  70880  2768 ?        Ss   Apr12   0:10 /lib/systemd/systemd-resolved
+systemd+  43774  0.0  0.1 146100  2928 ?        Ssl  Apr12   0:01 /lib/systemd/systemd-timesyncd
+root      43777  0.0  0.6  95036 10360 ?        S<s  Apr12   0:03 /lib/systemd/systemd-journald
+root      46068  0.0  0.4 303432  7128 ?        Ssl  Apr12   0:02 /usr/lib/policykit-1/polkitd --no-debug
+root      54423  0.0  0.0      0     0 ?        I<   Apr12   0:00 [xfsalloc]
+root      54426  0.0  0.0      0     0 ?        I<   Apr12   0:00 [xfs_mru_cache]
+root      54429  0.0  0.0      0     0 ?        S    Apr12   0:00 [jfsIO]
+root      54430  0.0  0.0      0     0 ?        S    Apr12   0:00 [jfsCommit]
+root      54431  0.0  0.0      0     0 ?        S    Apr12   0:00 [jfsSync]
+root      60535  0.0  0.0      0     0 ?        S<   Apr13   0:00 [loop21]
+root      60563  0.0  0.0      0     0 ?        S<   Apr13   0:00 [loop22]
+root      64034  0.0  0.0      0     0 ?        S<   Apr13   0:00 [loop2]
+root      64072  0.0  0.0      0     0 ?        S<   Apr13   0:00 [loop10]
+root      74744  0.0  0.0      0     0 ?        S<   Apr14   0:00 [loop6]
+root      76340  0.0  0.4 107680  7324 ?        Ss   10:26   0:00 /usr/sbin/cupsd -l
+root      76342  0.0  0.6 303652  9716 ?        Ssl  10:26   0:00 /usr/sbin/cups-browsed
+luke      76729  0.0 10.2 967120 154316 tty2    SNl+ 11:05   0:11 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+root      77037  0.0  0.4 107784  6996 ?        Ss   11:22   0:00 sshd: luke [priv]
+luke      77102  0.0  0.3 110084  5568 ?        S    11:22   0:01 sshd: luke@pts/0
+luke      77103  0.0  0.3  30076  5424 pts/0    Ss   11:22   0:00 -bash
+root      77249  0.0  0.4 107784  6848 ?        Ss   11:26   0:00 sshd: luke [priv]
+luke      77314  0.0  0.3 110084  5468 ?        S    11:26   0:00 sshd: luke@pts/1
+luke      77315  0.0  0.3  29976  5368 pts/1    Ss   11:26   0:00 -bash
+root      77331  0.0  0.2  72248  3708 pts/1    S    11:26   0:00 su xiongda
+xiongda   77332  0.0  0.3  29940  5312 pts/1    S+   11:26   0:00 bash
+root      77889  0.0  0.0      0     0 ?        I    12:15   0:00 [kworker/u256:1]
+root      77942  0.0  0.0      0     0 ?        I    14:05   0:00 [kworker/u256:2]
+luke      78072  0.0  0.2  46772  3680 pts/0    R+   14:51   0:00 ps -aux

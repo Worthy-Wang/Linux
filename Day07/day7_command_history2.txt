@@ -1,0 +1,180 @@
+ 1483  ls
+ 1484  tar cvzf day7.tar.gz day7
+ 1485  kscp day7.tar.gz 
+ 1486  ls
+ 1487  cd -
+ 1488  ls
+ 1489  gcc getpid.c 
+ 1490  ./a.out 
+ 1491  jobs
+ 1492  bg 1
+ 1493  jobs
+ 1494  bg 2
+ 1495  jobs
+ 1496  ./a.out &
+ 1497  jobs
+ 1498  ./a.out & >/dev/null
+ 1499  ./a.out >/dev/null
+ 1500  jobs
+ 1501  bg 5
+ 1502  jobs
+ 1503  ./a.out >/dev/null &
+ 1504  jobs
+ 1505  fg 1
+ 1506  jobs
+ 1507  fg 2
+ 1508  fg 3
+ 1509  fg 4
+ 1510  fg 5
+ 1511  fg 6
+ 1512  ls
+ 1513  vim /etc/crontab 
+ 1514  ll /etc/crontab 
+ 1515  touch /tmp/luke_log
+ 1516  sudo vim /etc/crontab 
+ 1517  ps -elf|grep cron
+ 1518  kill -9 576
+ 1519  sudo kill -9 576
+ 1520  ps -elf|grep cron
+ 1521  su
+ 1522  ls
+ 1523  vim /etc/crontab 
+ 1524  wall
+ 1525  who
+ 1526  clear
+ 1527  history 
+ 1528  cat /tmp/luke_log 
+ 1529  ls
+ 1530  sudo vim /etc/sudoers
+ 1531  sudo vim /etc/crontab 
+ 1532  ps -elf|grep crontab
+ 1533  ps -elf|grep cron
+ 1534  ls
+ 1535  cd fork/
+ 1536  ls
+ 1537  vim fork.c 
+ 1538  vim fork_stack.c 
+ 1539  gcc fork_stack.c 
+ 1540  ./a.out 
+ 1541  ls
+ 1542  vim fork_stack.c 
+ 1543  ls
+ 1544  cp fork_stack.c fork_malloc.c
+ 1545  vim fork_malloc.c 
+ 1546  gcc fork_malloc.c 
+ 1547  ./a.out 
+ 1548  ls
+ 1549  cp fork_stack.c fork_open.c
+ 1550  vim fork_open.c 
+ 1551  gcc fork_open.c 
+ 1552  touch file
+ 1553  ll
+ 1554  ./a.out 
+ 1555  ls
+ 1556  ll
+ 1557  cat file
+ 1558  cat fork_open.c 
+ 1559  vim fork_open.c 
+ 1560  cp fork_open.c fork_open2.c
+ 1561  vim fork_open2.c 
+ 1562  rm file;touch file
+ 1563  gcc fork_open2.c 
+ 1564  ./a.out 
+ 1565  ll
+ 1566  cat file 
+ 1567  man 3 execl
+ 1568  man execve
+ 1569  man 3 execl
+ 1570  ls
+ 1571  cd ..
+ 1572  ls
+ 1573  mkdir execl
+ 1574  cd execl/
+ 1575  ls
+ 1576  vim execl.c
+ 1577  man execl
+ 1578  ls
+ 1579  vim print.c
+ 1580  gcc print.c -o print
+ 1581  ls
+ 1582  ./print 
+ 1583  gcc execl.c 
+ 1584  ./a.out 
+ 1585  cat execl.c 
+ 1586  ls
+ 1587  man execve
+ 1588  ls
+ 1589  cd ..
+ 1590  ls
+ 1591  mkdir system
+ 1592  ls
+ 1593  cd system/
+ 1594  ls
+ 1595  vim system.c
+ 1596  gcc system.c -o system
+ 1597  ./system "ls -l"
+ 1598  python 3+4
+ 1599  python
+ 1600  vim first.py
+ 1601  python first.py 
+ 1602  ./system "python first.py"
+ 1603  ./system "sleep 30"
+ 1604  cd ..
+ 1605  ls
+ 1606  cd execl/
+ 1607  man execl
+ 1608  man execve
+ 1609  man execl
+ 1610  ls
+ 1611  man execl
+ 1612  cp execl.c execv.c
+ 1613  vim execv.c 
+ 1614  gcc execv.c 
+ 1615  vim execv.c 
+ 1616  gcc execv.c 
+ 1617  vim execv.c 
+ 1618  gcc execv.c 
+ 1619  ./a.out 
+ 1620  env
+ 1621  ls
+ 1622  cp print.c change_env.c
+ 1623  vim change_env.c 
+ 1624  gcc change_env.c -o change_env
+ 1625  vim change_env.c 
+ 1626  man system
+ 1627  vim change_env.c 
+ 1628  gcc change_env.c -o change_env
+ 1629  ./change_env 
+ 1630  ls
+ 1631  cp execl.c execle.c
+ 1632  vim execle.c 
+ 1633  gcc execle.c 
+ 1634  vim execle.c 
+ 1635  gcc execle.c 
+ 1636  ./a.out 
+ 1637  ls
+ 1638  vim change_env.c 
+ 1639  gcc execle.c 
+ 1640  ./a.out 
+ 1641  vim change_env.c 
+ 1642  gcc change_env.c -o change_env
+ 1643  ls
+ 1644  vim execle.c 
+ 1645  gcc execle.c 
+ 1646  ./a.out 
+ 1647  vim execle.c 
+ 1648  gcc execle.c 
+ 1649  ./a.out 
+ 1650  vim execle.c 
+ 1651  gcc execle.c 
+ 1652  ./a.out 
+ 1653  vim execle.c 
+ 1654  env
+ 1655  ls
+ 1656  cd ~
+ 1657  tar cvzf day7.tar.gz day7
+ 1658  kscp day7.tar.gz 
+ 1659  history 
+ 1660  kssh 
+ 1661  history 
+ 1662  history |tail -180 >day7_command_history2.txt

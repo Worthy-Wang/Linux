@@ -1,0 +1,50 @@
+ 1431  ll
+ 1432  ps -elf\
+ 1433  ps -elf
+ 1434  kmkdir 
+ 1435  cd ~
+ 1436  tar cvzf day7.tar.gz day7
+ 1437  kscp day7.tar.gz 
+ 1438  cd day7/
+ 1439  ls
+ 1440  gcc getpid.c 
+ 1441  ./a.out 
+ 1442  vim read_stdin.c
+ 1443  gcc read_stdin.c 
+ 1444  ./a.out 
+ 1445  ps -elf
+ 1446  ps -elf >process_stat
+ 1447  vim process_stat 
+ 1448  ps -elf >process_stat_elf
+ 1449  ps -aux >process_stat_aux
+ 1450  vim process_stat_aux 
+ 1451  ls
+ 1452  ./a.out 
+ 1453  gcc read_stdin.c 
+ 1454  ./a.out 
+ 1455  jobs
+ 1456  fg 1
+ 1457  ls
+ 1458  gcc read_stdin.c 
+ 1459  ./a.out 
+ 1460  jobs
+ 1461  fg 1
+ 1462  vim read_stdin.c 
+ 1463  gcc -g read_stdin.c 
+ 1464  ./a.out 
+ 1465  fg 1
+ 1466  ls
+ 1467  vim read_stdin.c 
+ 1468  fg 1
+ 1469  vim read_stdin.c 
+ 1470  ps -elf|grep vim
+ 1471  vim read_stdin.c 
+ 1472  ls -a
+ 1473  fg 1
+ 1474  ls
+ 1475  gcc -g getuid.c 
+ 1476  ls
+ 1477  gdb a.out
+ 1478  ls
+ 1479  history 
+ 1480  history |tail -50 >day7_command_histroy.txt
