@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARGS_CHECK	function.h	31;"	d
+CC	Makefile	/^CC:=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS:=-g -Wall -D DEBUG$/;"	m
+ELF	Makefile	/^ELF:=process_pool_server$/;"	m
+ERROR_CHECK	function.h	33;"	d
+FILENAME	function.h	47;"	d
+OBJS	Makefile	/^OBJS:=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+Process_Data	function.h	/^}Process_Data;$/;"	t	typeref:struct:__anon1
+SRCS	Makefile	/^SRCS:=$(wildcard *.c)$/;"	m
+THREAD_ERROR_CHECK	function.h	35;"	d
+Train_t	function.h	/^}Train_t;$/;"	t	typeref:struct:__anon2
+buf	function.h	/^	char buf[1000];$/;"	m	struct:__anon2
+busy	function.h	/^	short busy;\/\/子进程是否忙碌，0代表非忙碌，1代表忙碌$/;"	m	struct:__anon1
+childHandle	child.c	/^int childHandle(int fd)$/;"	f
+dataLen	function.h	/^	int dataLen;$/;"	m	struct:__anon2
+exitFds	main.c	/^int exitFds[2];$/;"	v
+fd	function.h	/^	int fd;\/\/子进程的管道对端$/;"	m	struct:__anon1
+main	main.c	/^int main(int argc,char* argv[])$/;"	f
+main	send_fd/send_fd.c	/^int main()$/;"	f
+main	send_fd/writev.c	/^int main()$/;"	f
+makeChild	child.c	/^int makeChild(Process_Data *pChild,int childNum)$/;"	f
+pid	function.h	/^	pid_t pid;\/\/子进程的pid$/;"	m	struct:__anon1
+recvFd	send_fd.c	/^int recvFd(int sfd,int *fd)$/;"	f
+recvFd	send_fd/send_fd.c	/^int recvFd(int sfd,int *fd)$/;"	f
+sendFd	send_fd.c	/^int sendFd(int sfd,int fd)$/;"	f
+sendFd	send_fd/send_fd.c	/^int sendFd(int sfd,int fd)$/;"	f
+sigFunc	main.c	/^void sigFunc(int signum)$/;"	f
+tcpInit	tcpInit.c	/^int tcpInit(int *pSocketFd,char *ip,char* port)$/;"	f
+tranFile	tran_file.c	/^int tranFile(int newFd)$/;"	f
