@@ -1,4 +1,4 @@
-#include <func.h>
+#include <Unixfunc.h>
 //设置锁的属性，设置为检错锁
 int main()
 {
@@ -11,6 +11,7 @@ int main()
 	THREAD_ERROR_CHECK(ret,"pthread_mutex_init");
 	pthread_mutex_lock(&mutex);
 	ret=pthread_mutex_lock(&mutex);
+	printf("ret = %d\n", ret );
 	THREAD_ERROR_CHECK(ret,"pthread_mutex_lock");
 	printf("you can't see me\n");
 	ret=pthread_mutex_destroy(&mutex);

@@ -1,4 +1,4 @@
-#include <func.h>
+#include <Unixfunc.h>
 
 typedef struct{
 	int tickets;
@@ -28,7 +28,7 @@ void* saleWindows1(void* p)
 			printf("I am windows1 sale %d\n",count);
 			break;
 		}
-		sleep(1);
+		// sleep(1);
 	}
 	return NULL;
 }
@@ -55,7 +55,7 @@ void* saleWindows2(void* p)
 			printf("I am windows2 sale %d\n",count);
 			break;
 		}
-		sleep(1);
+		// sleep(1);
 	}
 	return NULL;
 }
