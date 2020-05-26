@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
-本篇文章参考于：https://www.jianshu.com/p/7e3045cf1ab8（Linux系统编程—消息队列）
+本篇文章参考于：[Linux系统编程—消息队列](https://www.jianshu.com/p/7e3045cf1ab8)
 
 IPC进程间通信(四) 消息队列
 

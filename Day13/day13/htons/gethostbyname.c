@@ -1,4 +1,5 @@
-#include <func.h>
+#include <Unixfunc.h>
+#include <netdb.h>
 
 int main(int argc,char* argv[])
 {
@@ -7,6 +8,7 @@ int main(int argc,char* argv[])
 	p=gethostbyname(argv[1]);
 	printf("%s\n",p->h_name);
 	int i;
+	printf("别名：\n");
 	for(i=0;p->h_aliases[i]!=NULL;i++)
 	{
 		printf("%s\n",p->h_aliases[i]);
@@ -16,6 +18,7 @@ int main(int argc,char* argv[])
 	char ip[16]={0};
 	for(i=0;p->h_addr_list[i]!=NULL;i++)
 	{
+		printf("%s\n",p->h_addr_list[i]);
 		memset(ip,0,sizeof(ip));
 		inet_ntop(p->h_addrtype,p->h_addr_list[i],ip,sizeof(ip));
 		printf("%s\n",ip);

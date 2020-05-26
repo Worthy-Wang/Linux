@@ -92,6 +92,6 @@ int test1()
 
 int main()
 {
-    test0();
+    test1();
     return 0;
 }

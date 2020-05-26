@@ -193,7 +193,7 @@ int producer_consumer()
 
 int main()
 {
-    add_and_count();
-    // producer_consumer();
+    // add_and_count();
+    producer_consumer();
     return 0;
 }

@@ -10,9 +10,11 @@ Posix多线程pthread详解
 不论是子线程还是主线程，实质上都共同属于同一个进程，这大大的减小了系统的开销。
 另外，多线程与多进程的使用实质上主要掌握 创建 等待 退出 这三个点
 
-||创建|等待|退出|清理|
-|多进程|fork|wait|exit|signal|
-|多线程|pthread_create|pthread_join|pthread_exit|pthread_cleanup_push(pop)|
+||创建|等待|退出|
+|多进程|fork|wait|exit|
+|多线程|pthread_create|pthread_join|pthread_exit|
+
+同时，多线程也有自己的线程清理函数 pthread_cleanup_push(pop).
 
 一.线程创建 pthread_create
 

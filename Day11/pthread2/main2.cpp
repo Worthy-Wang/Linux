@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
-二.条件变量
+二.线程同步
 
 条件变量的使用方法为：
     pthread_mutex_lock(&mutex);

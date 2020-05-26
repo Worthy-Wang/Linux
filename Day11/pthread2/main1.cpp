@@ -3,9 +3,9 @@
 using namespace std;
 
 /*
-Posix多线程pthread详解(二) 锁与条件变量
+Posix多线程pthread详解(二) 线程的同步与互斥
 
-一.互斥锁
+一.线程互斥
 互斥锁的使用形式如下：
     pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
     pthread_mutex_locK(&mutex);
