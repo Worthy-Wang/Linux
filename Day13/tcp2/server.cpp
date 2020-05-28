@@ -65,6 +65,12 @@ accept函数一般是阻塞状态，用于接收连接的服务器，注意返�
 这个connect与服务端的bind函数相对应，连接上服务端已经绑定好的socket
 
 
+注意，在bind之前可能会遇到：bind: Address already in use 这种情况
+出现的原因是绑定的套接字在close之后还需要等待TIME_WAIT一段时间才能够进行重新绑定。
+此时我们可以使用以下语句，让套接字可以立刻再次使用：
+    int on = 1;
+    ret = setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &on, sizeof(on));
+    ERROR_CHECK(ret, -1, "setsockopt");
 
 案例：客户端连接上服务器并且互发消息
 */
@@ -74,6 +80,9 @@ int main()
     int ret;
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
     ERROR_CHECK(sockfd, -1, "socket");
+    int on = 1;
+    ret = setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &on, sizeof(on));
+    ERROR_CHECK(ret, -1, "setsockopt");
     struct sockaddr_in sockinfo;
     bzero(&sockinfo, sizeof(sockinfo));
     sockinfo.sin_addr.s_addr = inet_addr("172.21.0.7");

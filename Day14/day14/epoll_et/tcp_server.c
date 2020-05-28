@@ -1,4 +1,4 @@
-#include <func.h>
+#include <Unixfunc.h>
 //水平触发，缓冲区有数据就触发
 //边沿触发，缓冲区数据出现增加时，才会触发
 void changeNonblock(int fd)

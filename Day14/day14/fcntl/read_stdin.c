@@ -1,4 +1,4 @@
-#include <func.h>
+#include <Unixfunc.h>
 void changeNonblock(int fd)
 {
 	int status=fcntl(fd,F_GETFL);
@@ -12,6 +12,6 @@ int main()
 	int ret;
 	changeNonblock(0);
 	ret=read(0,buf,sizeof(buf));
-	printf("ret=%d,buf=%s,errno=%d\n",ret,buf,errno);
+	printf("ret=%d,buf=%s\n",ret,buf);
 	return 0;
 }
