@@ -1,6 +1,6 @@
 #include "function.h"
 
-int tcpInit()
+int tcpInit(int *fd)
 {
     int ret;
     int sockfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -17,5 +17,6 @@ int tcpInit()
     ERROR_CHECK(ret, -1, "bind");
     ret = listen(sockfd, 10);
     ERROR_CHECK(ret, -1, "listen");
+    *fd = sockfd;
     return 0;
 }

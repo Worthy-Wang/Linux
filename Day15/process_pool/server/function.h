@@ -42,8 +42,8 @@ struct Process_data
     bool busy;
 };
 
-int tcpInit();
-void makeProcess(Process_data* pArr);
+int tcpInit(int*);
+int makeProcess(Process_data* pArr);
 void doingTask(int fd);
 int sendFd(int,int);
 int recvFd(int,int*);

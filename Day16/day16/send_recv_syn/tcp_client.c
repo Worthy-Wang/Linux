@@ -1,4 +1,4 @@
-#include <func.h>
+#include <Unixfunc.h>
 #define N 1048576
 int main(int argc,char* argv[])
 {
@@ -21,11 +21,7 @@ int main(int argc,char* argv[])
 	for(i=0;i<N;i++)
 	{
 		ret=send(socketFd,buf,sizeof(buf),0);
-		if(-1==ret)
-		{
-			printf("errno=%d\n",errno);
-			return -1;
-		}
+		ERROR_CHECK(ret, -1, "send");
 		printf("ret=%d\n",ret);
 	}
 	close(socketFd);

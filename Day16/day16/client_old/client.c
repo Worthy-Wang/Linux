@@ -1,35 +1,42 @@
 #include "function.h"
 
-int main(int argc,char* argv[])
+int main(int argc, char *argv[])
 {
-	ARGS_CHECK(argc,3);
+	ARGS_CHECK(argc, 3);
 	int socketFd;
-	socketFd=socket(AF_INET,SOCK_STREAM,0);
-	ERROR_CHECK(socketFd,-1,"socket");
+	socketFd = socket(AF_INET, SOCK_STREAM, 0);
+	ERROR_CHECK(socketFd, -1, "socket");
 	struct sockaddr_in ser;
-	bzero(&ser,sizeof(ser));
-	ser.sin_family=AF_INET;
-	ser.sin_port=htons(atoi(argv[2]));
-	ser.sin_addr.s_addr=inet_addr(argv[1]);//点分十进制转为32位的网络字节序
+	bzero(&ser, sizeof(ser));
+	ser.sin_family = AF_INET;
+	ser.sin_port = htons(atoi(argv[2]));
+	ser.sin_addr.s_addr = inet_addr(argv[1]); //点分十进制转为32位的网络字节序
 	int ret;
-	ret=connect(socketFd,(struct sockaddr*)&ser,sizeof(ser));
-	ERROR_CHECK(ret,-1,"connect");
+	ret = connect(socketFd, (struct sockaddr *)&ser, sizeof(ser));
+	ERROR_CHECK(ret, -1, "connect");
 	printf("connect success\n");
 	int dataLen;
-	char buf[1000]={0};
-	recvCycle(socketFd,&dataLen,4);
-	recvCycle(socketFd,buf,dataLen);
+	char buf[1000] = {0};
+	//filename
+	recvCycle(socketFd, &dataLen, 4);
+	recvCycle(socketFd, buf, dataLen);
 	int fd;
-	fd=open(buf,O_CREAT|O_WRONLY,0666);
-	ERROR_CHECK(fd,-1,"open");
-	while(1)
+	fd = open(buf, O_CREAT | O_WRONLY, 0666);
+	ERROR_CHECK(fd, -1, "open");
+	//filesize
+	off_t fileSize = 0;
+	recvCycle(socketFd, &dataLen, 4);
+	recvCycle(socketFd, &fileSize, dataLen);
+	while (1)
 	{
-		recvCycle(socketFd,&dataLen,4);
-		if(dataLen>0)
+		recvCycle(socketFd, &dataLen, 4);
+		if (dataLen > 0)
 		{
-			recvCycle(socketFd,buf,dataLen);
-			write(fd,buf,dataLen);
-		}else{
+			recvCycle(socketFd, buf, dataLen);
+			write(fd, buf, dataLen);
+		}
+		else
+		{
 			break;
 		}
 	}

@@ -1,12 +1,12 @@
 #include "function.h"
 
-void makeProcess(Process_data *pArr)
+int makeProcess(Process_data *pArr)
 {
     int fds[2];
-    int ret;
     for (int i = 0; i < PROCESSNUM; i++)
     {
-        socketpair(AF_LOCAL, SOCK_STREAM, 0, fds);
+        int ret = socketpair(AF_LOCAL, SOCK_STREAM, 0, fds);
+        ERROR_CHECK(ret, -1, "socketpair");
         pid_t pid = fork();
         if (pid == 0)
         {
@@ -23,6 +23,7 @@ void makeProcess(Process_data *pArr)
             pArr[i] = child;
         }
     }
+    return 0;
 }
 
 void doingTask(int fd)
@@ -32,7 +33,8 @@ void doingTask(int fd)
         int newfd;
         cout << "child process waiting for task..." << endl;
         recvFd(fd, &newfd);
-        cout << "new child process is servering the client:" << newfd << endl;
+        cout << "child process is servering the client:" << newfd << endl;
+        sleep(1);
         bool busy = false;
         send(fd, &busy, 1, 0);//发送一个标识消息，告诉主进程，自己不忙了
     }
