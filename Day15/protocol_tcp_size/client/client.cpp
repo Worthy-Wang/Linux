@@ -1,5 +1,7 @@
 #include <Unixfunc.h>
+#include <sys/time.h>
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 #define IP "172.21.0.7"
@@ -41,18 +43,33 @@ int recvFile(int sockfd)
     memcpy(&filesize, buf, dataLen);
 
     //接收文件内容
+    off_t beg = 0;
+    off_t download = 0;
+    off_t slice = filesize / 100; //完成百分之一时打印
+    cout << "Starting receive file" << endl;
     while (1)
     {
         ret = recvCycle(sockfd, &dataLen, sizeof(int));
         ERROR_CHECK(ret, -1, "recvCycle");
-        if (0 == dataLen)//收到的是结束标志，结束接收
+        if (0 == dataLen) //收到的是结束标志，结束接收
+        {
+            printf("\r100.00%%\n");
             break;
+        }
         else
         {
+            download += dataLen;
             ret = recvCycle(sockfd, buf, dataLen);
             ERROR_CHECK(ret, -1, "recvCycle");
             ret = write(file_fd, buf, dataLen);
             ERROR_CHECK(ret, -1, "write");
+            //计算完成进度
+            if (download - beg > slice)
+            {
+                printf("\r%5.2f%%", (float)download/filesize * 100);
+                fflush(stdout);
+                beg = download;
+            }
         }
     }
 
