@@ -1,4 +1,4 @@
-#include <func.h>
+#include <Unixfunc.h>
 void* threadFunc(void* p)
 {
     time_t now;

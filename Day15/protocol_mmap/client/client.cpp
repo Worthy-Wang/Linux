@@ -7,7 +7,6 @@ using namespace std;
 #define IP "172.21.0.7"
 #define PORT 2000
 
-
 int recvCycle(int fd, void *p, size_t len)
 {
     char *pStart = (char *)p;
@@ -38,35 +37,35 @@ int recvFile(int sockfd)
     recvCycle(sockfd, buf, dataLen);
     off_t filesize;
     memcpy(&filesize, buf, dataLen);
+    ftruncate(file_fd, filesize);
 
     //接收文件内容
-    off_t beg = 0;
-    off_t download = 0;
-    off_t slice = filesize / 100; //完成百分之一时打印
-    cout << "Starting receive file" << endl;
+    char *pmap = (char *)mmap(NULL, filesize, PROT_WRITE, MAP_SHARED, file_fd, 0);
+    ERROR_CHECK(pmap, (char *)-1, "mmap");
+    off_t download = 0, lastsize = 0;
+    off_t slice = filesize / 100;
     while (1)
     {
         recvCycle(sockfd, &dataLen, sizeof(int));
-        if (0 == dataLen) //收到的是结束标志，结束接收
+        if (0 == dataLen)
         {
             printf("\r100.00%%\n");
             break;
         }
         else
         {
+            recvCycle(sockfd, pmap + download, dataLen);
             download += dataLen;
-            recvCycle(sockfd, buf, dataLen);
-            ret = write(file_fd, buf, dataLen);
-            ERROR_CHECK(ret, -1, "write");
-            //计算完成进度
-            if (download - beg > slice)
+            if (download - lastsize > slice)
             {
-                printf("\r%5.2f%%", (float)download/filesize * 100);
+                printf("\r%5.2f%%", (float)download / filesize * 100);
                 fflush(stdout);
-                beg = download;
+                lastsize = download;
             }
         }
     }
+    ret = munmap(pmap, filesize);
+    ERROR_CHECK(ret, -1, "munmap");
 
     close(file_fd);
     return 0;

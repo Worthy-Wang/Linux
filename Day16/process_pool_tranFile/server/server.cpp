@@ -7,6 +7,9 @@
 2.建立TCP连接，epoll监听sockfd 以及 与进程池相连接的所有管道
 3.epoll开始监听，如果sockfd就绪则连接好新的客户端，并将客户端转交子进程处理；如果管道就绪则将子进程调整为非忙碌状态。
 
+技术亮点：
+1.安全退出机制：服务器（客户端）突然断开，另一方均可安全退出。
+
 */
 
 int main()
@@ -14,9 +17,11 @@ int main()
     //1.
     Process_data pArr[PROCESSNUM];
     makeProcess(pArr);
+    cout << "Now there are " << PROCESSNUM << " child process waiting for task" << endl;
     //2.
     int sockfd;
     tcpInit(&sockfd);
+    cout << "Server is running..." << endl;
     int epfd = epoll_create(1);
     ERROR_CHECK(epfd, -1, "epoll_create");
     struct epoll_event ev, evs[PROCESSNUM + 1];
