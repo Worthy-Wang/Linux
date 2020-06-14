@@ -42,7 +42,7 @@ void *doingTask(void *arg)
             pthread_cond_wait(&f->cond, &f->que.mutex);
         int task = f->que.getTask();
         cout << "child thread " << pthread_self() << " is doing Task " << task << endl;
-        tranFile(task);
+        sendFile(task);
         pthread_mutex_unlock(&f->que.mutex);
     }
 }

@@ -20,9 +20,11 @@ int main()
     struct epoll_event ev;
     ev.events = EPOLLIN;
     ev.data.fd = STDIN_FILENO;
-    epoll_ctl(epfd, EPOLL_CTL_ADD, STDIN_FILENO, &ev);
+    ret = epoll_ctl(epfd, EPOLL_CTL_ADD, STDIN_FILENO, &ev);
+    ERROR_CHECK(ret, -1, "epoll_ctl");
     ev.data.fd = sockfd;
-    epoll_ctl(epfd, EPOLL_CTL_ADD, sockfd, &ev);
+    ret = epoll_ctl(epfd, EPOLL_CTL_ADD, sockfd, &ev);
+    ERROR_CHECK(ret, -1, "epoll_ctl");
     while (1)
     {
         struct epoll_event evs[2];

@@ -33,13 +33,23 @@ using namespace std;
 #define ERROR_CHECK(ret, retval, filename) {if (ret == retval){perror(filename); return -1;}}  
 
 /*****************************************结构体定义部分******************************************/
-#define PROCESSNUM 10
 #define IP "172.21.0.7"
 #define PORT 2000
 #define THREADNUM 10
 #define FILENAME "file"
 
-
+struct Packet
+{
+    int dataLen;    // 包头，用来记录存数据的大小
+    char buf[1000]; // 包数据，用来存放数据
+};
 
 int tcpInit(int*);
-int tranFile(int);
+
+//接收,发送文件
+int recvFile(int sockfd);
+int sendFile(int sockfd);
+
+//循环接收，发送数据
+int recvCycle(int, void*, size_t);
+int sendCycle(int, void*, size_t);
